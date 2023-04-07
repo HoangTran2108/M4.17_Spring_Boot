@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<form id="addProduct">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="number" id="price" placeholder="price"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><input type="text" id="description" placeholder="description"></td>
+        </tr>
+        <tr>
+            <td>Producer:</td>
+            <td><input type="text" id="producer" placeholder="producer"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add" onclick="addNewProduct()"></td>
+        </tr>
+    </table>
+</form>
+
+<h1>Product List</h1>
+<table id="productList" border="1">
+    <tr>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Description</td>
+        <td>Producer</td>
+        <td>Delete</td>
+        <td>Update</td>
+    </tr>
+    <tbody id="content"></tbody>
+</table>
+<p></p>
+<p></p>
+<h3>Update Product</h3>
+<form id="editProduct">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="nameUpdate" value="name"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="number" id="priceUpdate" placeholder="price"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><input type="text" id="descriptionUpdate" placeholder="description"></td>
+        </tr>
+        <tr>
+            <td>Producer:</td>
+            <td><input type="text" id="producerUpdate" placeholder="producer"></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</form>
+
+<script src="ListP.js"></script>
+</body>
+</html>
